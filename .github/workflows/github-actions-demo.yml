@@ -15,10 +15,10 @@ jobs:
     steps:
       - name: Output event trigger
         run: |
-          echo "{{ $github.events }} triggered this job"
+          echo "${{ github.event_name }} triggered this job"
       - name: Output branch name
         run: |
-          echo "{{ $github.ref }} is the name of the branch"
+          echo "${{ github.ref }} is the name of the branch"
       - uses: actions/checkout@v6
       - name: List all files
         run: |
