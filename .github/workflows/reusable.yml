@@ -19,7 +19,6 @@ jobs:
       - name: Print hello
         run: |
           echo "Hello "
-
       - name: output time
         id: time
         run: |
